@@ -1,7 +1,51 @@
-body {
+html {
+  box-sizing: border-box;
+}
 
-  background-image: linear-gradient(#54BCDC, #133376 );
+body {
   font-family: 'Roboto Mono', monospace;
-  background-attachment: fixed;
   color: #133376;
+  background-image: linear-gradient(#54BCDC, #133376);
+  background-attachment: fixed;
+  text-align: center;
+}
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+.calculator-screen {
+  width: 90%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #333;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+button {
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+}
+button:active {
+  background-color: #133376;
+  color: #54BCDC;
+  border-radius: 15px;
+}
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
